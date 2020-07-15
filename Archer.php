@@ -12,6 +12,6 @@ class Archer extends Character
 
     public function rangeAttak($target)
     {
-        $target->hp -= $this->power;
+        $target->vie -= $this->power;
     }
 }

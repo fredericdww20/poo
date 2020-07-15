@@ -1,16 +1,19 @@
 <?php
 
-class Character
+class Character 
 {
     public $name;
+    public $vie = 100;
+    private $warcry; 
 
-    public $hp = 100;
-
-    public $warcry;
-
-    public function __construct($name, $cri_instance)
+    public function __construct($name, $warcry)
     {
         $this->name = $name;
-        $this->warcry = $cri_instance;
+        $this->warcry = $warcry;
+    }
+
+    public function getWarcry()
+    {
+        return $this->warcry;
     }
 }
