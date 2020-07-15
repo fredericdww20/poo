@@ -2,6 +2,7 @@
 
 require("Character.php");
 require("Archer.php");
+require("Musique.php");
 
 
 $hero = new Character("Merlin", "brouhhh");
@@ -14,3 +15,5 @@ echo $vilain->vie . "<br>";
 $archer->rangeAttak($vilain);
 
 echo $vilain->vie . "<br>";
+
+echo Musique::getfx();
